@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku9x9</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="layout">
+            <header style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"><h2>SUDOKU SOLVER 9x9</h2>
+            <main>
+                <div class="grid">
+                    <div class="row1 row">
+                        <div class="gridsq">
+                            <div class="col1 col">
+                                <div class="rowin">
+                                    <div class="box box11">
+                                        <input type="text" id="input11">
+                                    </div>
+                                    <div class="box box12">
+                                        <input type="text" id="input12">
+                                    </div> 
+                                    <div class="box box13">
+                                        <input type="text" id="input13">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box21">
+                                        <input type="text" id="input21">
+                                    </div>
+                                    <div class="box box22">
+                                        <input type="text" id="input22">
+                                    </div> <div class="box box23">
+                                        <input type="text" id="input23">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box31">
+                                        <input type="text" id="input31">
+                                    </div>
+                                    <div class="box box32">
+                                        <input type="text" id="input32">
+                                    </div> <div class="box box33">
+                                        <input type="text" id="input33">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col2 col">
+                                <div class="rowin">
+                                    <div class="box box14">
+                                        <input type="text" id="input14">
+                                    </div>
+                                    <div class="box box15">
+                                        <input type="text" id="input15">
+                                    </div> <div class="box box16">
+                                        <input type="text" id="input16">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box24">
+                                        <input type="text" id="input24">
+                                    </div>
+                                    <div class="box box25">
+                                        <input type="text" id="input25">
+                                    </div> <div class="box box26">
+                                        <input type="text" id="input26">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box34">
+                                        <input type="text" id="input34">
+                                    </div>
+                                    <div class="box box35">
+                                        <input type="text" id="input35">
+                                    </div> <div class="box box36">
+                                        <input type="text" id="input36">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col3 col">
+                                <div class="rowin">
+                                    <div class="box box17">
+                                        <input type="text" id="input17">
+                                    </div>
+                                    <div class="box box18">
+                                        <input type="text" id="input18">
+                                    </div> <div class="box box19">
+                                        <input type="text" id="input19">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box27">
+                                        <input type="text" id="input27">
+                                    </div>
+                                    <div class="box box28">
+                                        <input type="text" id="input28">
+                                    </div> <div class="box box29">
+                                        <input type="text" id="input29">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box37">
+                                        <input type="text" id="input37">
+                                    </div>
+                                    <div class="box box38">
+                                        <input type="text" id="input38">
+                                    </div> <div class="box box39">
+                                        <input type="text" id="input39">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gridsq">
+                            <div class="col1 col">
+                                <div class="rowin">
+                                    <div class="box box41">
+                                        <input type="text" id="input41">
+                                    </div>
+                                    <div class="box box42">
+                                        <input type="text" id="input42">
+                                    </div> <div class="box box43">
+                                        <input type="text" id="input43">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box51">
+                                        <input type="text" id="input51">
+                                    </div>
+                                    <div class="box box52">
+                                        <input type="text" id="input52">
+                                    </div> <div class="box box53">
+                                        <input type="text" id="input53">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box61">
+                                        <input type="text" id="input61">
+                                    </div>
+                                    <div class="box box62">
+                                        <input type="text" id="input62">
+                                    </div> <div class="box box63">
+                                        <input type="text" id="input63">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col2 col">
+                                <div class="rowin">
+                                    <div class="box box44">
+                                        <input type="text" id="input44">
+                                    </div>
+                                    <div class="box box45">
+                                        <input type="text" id="input45">
+                                    </div> <div class="box box46">
+                                        <input type="text" id="input46">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box54">
+                                        <input type="text" id="input54">
+                                    </div>
+                                    <div class="box box55">
+                                        <input type="text" id="input55">
+                                    </div> <div class="box box56">
+                                        <input type="text" id="input56">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box64">
+                                        <input type="text" id="input64">
+                                    </div>
+                                    <div class="box box65">
+                                        <input type="text" id="input65">
+                                    </div> <div class="box box66">
+                                        <input type="text" id="input66">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col3 col">
+                                <div class="rowin">
+                                    <div class="box box47">
+                                        <input type="text" id="input47">
+                                    </div>
+                                    <div class="box box48">
+                                        <input type="text" id="input48">
+                                    </div> <div class="box box49">
+                                        <input type="text" id="input49">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box57">
+                                        <input type="text" id="input57">
+                                    </div>
+                                    <div class="box box58">
+                                        <input type="text" id="input58">
+                                    </div> <div class="box box59">
+                                        <input type="text" id="input59">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box67">
+                                        <input type="text" id="input67">
+                                    </div>
+                                    <div class="box box68">
+                                        <input type="text" id="input68">
+                                    </div> <div class="box box69">
+                                        <input type="text" id="input69">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="gridsq">
+                            <div class="col1 col">
+                                <div class="rowin">
+                                    <div class="box box71">
+                                        <input type="text" id="input71">
+                                    </div>
+                                    <div class="box box72">
+                                        <input type="text" id="input72">
+                                    </div> <div class="box box73">
+                                        <input type="text" id="input73">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box81">
+                                        <input type="text" id="input81">
+                                    </div>
+                                    <div class="box box82">
+                                        <input type="text" id="input82">
+                                    </div> <div class="box box83">
+                                        <input type="text" id="input83">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box91">
+                                        <input type="text" id="input91">
+                                    </div>
+                                    <div class="box box92">
+                                        <input type="text" id="input92">
+                                    </div> <div class="box box93">
+                                        <input type="text" id="input93">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col2 col">
+                                <div class="rowin">
+                                    <div class="box box74">
+                                        <input type="text" id="input74">
+                                    </div>
+                                    <div class="box box75">
+                                        <input type="text" id="input75">
+                                    </div> <div class="box box76">
+                                        <input type="text" id="input76">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box84">
+                                        <input type="text" id="input84">
+                                    </div>
+                                    <div class="box box85">
+                                        <input type="text" id="input85">
+                                    </div> <div class="box box86">
+                                        <input type="text" id="input86">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box94">
+                                        <input type="text" id="input94">
+                                    </div>
+                                    <div class="box box95">
+                                        <input type="text" id="input95">
+                                    </div> <div class="box box96">
+                                        <input type="text" id="input96">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col3 col">
+                                <div class="rowin">
+                                    <div class="box box77">
+                                        <input type="text" id="input77">
+                                    </div>
+                                    <div class="box box78">
+                                        <input type="text" id="input78">
+                                    </div> <div class="box box79">
+                                        <input type="text" id="input79">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box87">
+                                        <input type="text" id="input87">
+                                    </div>
+                                    <div class="box box88">
+                                        <input type="text" id="input88">
+                                    </div> <div class="box box89">
+                                        <input type="text" id="input89">
+                                    </div>
+                                </div>
+                                <div class="rowin">
+                                    <div class="box box97">
+                                        <input type="text" id="input97">
+                                    </div>
+                                    <div class="box box98">
+                                        <input type="text" id="input98">
+                                    </div> <div class="box box99">
+                                        <input type="text" id="input99">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit">
+                    <button type="submit" id="submit">
+                        <span style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">SOLVE</span>
+                    </button>
+                </div>
+            </main>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
